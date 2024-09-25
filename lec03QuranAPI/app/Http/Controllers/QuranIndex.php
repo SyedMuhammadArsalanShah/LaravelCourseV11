@@ -24,4 +24,22 @@ class QuranIndex extends Controller
 
         return View("Surahs", ["alldata" => $mydata["data"]["surahs"]["references"]]);
     }
+
+
+
+
+    function getRead($num)
+    {
+
+        // echo "working ......";
+
+
+
+
+        $mydata = Http::get("https://api.alquran.cloud/v1/surah/$num");
+
+        return View("ReadSurah", ["alldatas" => $mydata["data"]["ayahs"]]);
+    }
+
+
 }

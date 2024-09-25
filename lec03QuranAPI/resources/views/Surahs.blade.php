@@ -54,7 +54,7 @@
                         <td>{{ $item['englishName'] }} </td>
                         <td>{{ $item['numberOfAyahs'] }} </td>
                         <td>{{ $item['revelationType'] }} </td>
-                        <td><button type="button" class="btn btn-light">ReadSurah</button></td>
+                        <td><a href="/read/{{$item['number']}}"  class="btn btn-light">ReadSurah</button></td>
 
 
 

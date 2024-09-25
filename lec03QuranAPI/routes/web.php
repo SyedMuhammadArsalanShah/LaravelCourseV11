@@ -10,3 +10,4 @@ Route::get('/', function () {
 
 
 Route::get('/index', [QuranIndex::class, "getContents"]);
+Route::get('/read/{num}', [QuranIndex::class, "getRead"]);
